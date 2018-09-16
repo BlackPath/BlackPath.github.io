@@ -2,7 +2,7 @@
 
 	<head>
  		<title>Current Projects</title>	<!-- This changes -->
-        <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
         
         <link rel="icon" 
       	type="image/png" 
@@ -31,21 +31,24 @@
 	Hover.src = './sounds/Hover.mp3'
 	var Select = new Audio()
 	Select.src = './sounds/Select.mp3'
+	var GridButton = new Audio()
+	GridButton.src = './sounds/GridButton.mp3'
 	</script>
 
 	<style>
 		body{
 			background-color:#101010;
+			background-image: url("https://media.giphy.com/media/IeSXccYMz3K4U/giphy.gif");
 			color:#ffffff;
 		}
 		.btn{
-			background: black;
+			background: white;
 			font-weight: 200;
-			color: white;
+			color: black;
 			border: none;
 			text-align: center;
 			text-decoration: none;
-			text-shadow: 0 0 5px #ffffff;
+			text-shadow: 0 0 5px black;
 			display: inline-block;
 			font-size: 16px;
 			position: relative;
@@ -55,6 +58,8 @@
 		}
 		.btn:hover{
 			background: navy;
+			color: white;
+			text-shadow: 0 0 5px white;
 		}
 		#center{
 			margin: 0px auto;
@@ -65,6 +70,34 @@
 			margin: 0px auto;
 			position: relative;
 			text-align: center;
+		}
+		.grid-container {
+ 		display: grid;
+ 		grid-template-columns: auto auto auto;
+ 		grid-gap: 50px;
+ 		padding: 10px;
+		position: relative;
+		}
+		.grid-container>div {
+ 		background-color: white;
+  		text-align: center;
+  		padding:20px;
+ 		font-size: 30px;
+  		color: black;
+		text-shadow: 0 0 5px #000000;
+		font-family: Trebuchet MS;
+		}
+		.grid-container>div:hover {
+ 		background-color: navy;
+  		text-align: center;
+  		padding:20px;
+ 		font-size: 30px;
+  		color: white;
+		text-shadow: 0 0 5px white;
+		font-family: Trebuchet MS;
+		}
+		.item1 {
+ 		grid-row-start: 1;
 		}
 		.header, h2{
 	        color: white;
@@ -94,9 +127,19 @@
 
 <!-- [This Entire Section is specific to this page.] -->
 
+		<br>
+		<br>
+		<br>
+
+		<div class="grid-container">
+				<div class="item1" onmouseover="GridButton.play()">DS</div>
+				<div class="item2" onmouseover="GridButton.play()">E Society</div>  
+				<div class="item3" onmouseover="GridButton.play()">UNTN Website</div>
+				<div class="item4" onmouseover="GridButton.play()">CotS Website</div>
+				<div class="item4" onmouseover="GridButton.play()">TRWR</div>
+			  </div>
 
 
-	</div>
 
 	</body>
 
