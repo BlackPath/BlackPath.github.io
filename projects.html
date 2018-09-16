@@ -69,6 +69,11 @@
 			position: relative;
 			text-align: center;
 		}
+		.container-box{
+			height: 100px;
+			position: relative;
+			text-align: center;
+		}
 		.grid-container {
  		display: grid;
  		grid-template-columns: auto auto auto;
@@ -153,8 +158,30 @@
 		<br>
 		<br>
 		<br>
-		<h3>Working on this page</h3>
-		<br>
+		<h3>Feel free to donate to support my future projects:</h3>
+		<div class="container-box">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				
+						<!-- Identify your business so that you can collect the payments. -->
+						<input type="hidden" name="business"
+							value="Josh_P_Johnson@Protonmail.com">
+					
+						<!-- Specify a Donate button. -->
+						<input type="hidden" name="cmd" value="_donations">
+					
+						<!-- Specify details about the contribution -->
+						<input type="hidden" name="item_number" value="Would you like to buy me a coffee?">
+						<input type="hidden" name="amount" value="0.99">
+						<input type="hidden" name="currency_code" value="USD">
+					
+						<!-- Display the payment button. -->
+						<input type="image" name="submit"
+						src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+						alt="Donate">
+						<img alt="" width="1" height="1"
+						src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+					</form>
+			</div>
 
 		<div class="grid-container">
 				<div class="item1" onmouseover="GridButton.play()">DS</div>
