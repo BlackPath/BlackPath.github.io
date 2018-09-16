@@ -74,15 +74,84 @@
 			position: relative;
 			text-align: center;
 		}
+		.form-control{
+			background-color: transparent;
+			border: 2px solid white;
+			height: 50px;
+			width: 500px;
+			color: white;
+			text-align: center;
+			text-shadow: 0 0 5px white;
+			font-size: 20px;
+		}
+		.form-control-large{
+			background-color: transparent;
+			border: 2px solid white;
+			height: 200px;
+			width: 500px;
+			color: white;
+			text-align: center;
+			text-shadow: 0 0 5px white;
+			font-size: 20px;	
+			line-height: 180px;
+		}
+		.header h1{
+			font-size: 80px;
+			font-family: 'Trebuchet MS';
+			text-shadow: 0 0 5px white;
+		}
 		.header, h2{
 	        color: white;
-	        margin-top: 10px;
-	        margin-left: 30px;
+	        margin-bottom: 0 auto;
 	        text-align: center;
+			background-image: url("./images/Banner.png");
+			background-position: center; 
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 150px;
+			position: center;
+			line-height: 150px;
         }
+		.inputcontainer{
+			margin: 20px;
+			position: relative;
+			text-align: center;
+		}
+		.input.placeholder{
+			color: white;
+			text-align: center;
+		}
 		.nav{
 			text-align: center;
 		}
+		::-webkit-input-placeholder {
+   			color:    #afafaf;
+			text-align: center;
+			text-shadow: 0 0 5px #afafaf;
+		}
+		:-moz-placeholder {
+   			color:    #afafaf;
+   			opacity:  1;
+			text-align: center;
+			text-shadow: 0 0 5px #afafaf;
+		}
+		::-moz-placeholder {
+   			color:    #afafaf;
+   			opacity:  1;
+			text-align: center;
+			text-shadow: 0 0 5px #afafaf;
+		}
+		:-ms-input-placeholder {
+			color:    #afafaf;
+			text-align: center;
+			text-shadow: 0 0 5px #afafaf;
+		}
+		::-ms-input-placeholder {
+			color:    #afafaf;
+			text-align: center;
+			text-shadow: 0 0 5px #afafaf;
+		}
+
 	</style>
 	
 	<body>
@@ -91,7 +160,7 @@
 			</amp-auto-ads>
 	
 	<div class="header">
-        <h2>Contact</h2> <!-- This Changes -->
+        <h1>Contact</h1> <!-- This Changes -->
         </div>
 		
 
@@ -108,22 +177,19 @@
 target="_self"
 id="bootstrapForm"
 method="POST">
-<h2><br><small>Fill out this form and I'll get back to you as soon as possible.</small></h2>
+<h1 align="center"><br><small>Fill out this form and I'll get back to you as soon as possible.</small></h1>
 <P align="center">(I'll also try to make this page look prettier)</P>
 <!-- Field type: "short" id: "1633920210" -->
-  <div class="container">
-	  <p>Name</p>
-	  <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
+  <div class="inputcontainer">
+	  <input id="2005620554" type="text" name="entry.2005620554" placeholder="Name" class="form-control" required>
   </div>
 <!-- Field type: "short" id: "1607574547" -->
-  <div class="container">
-	  <p>Email</p>
-	  <input id="202428310" type="text" name="entry.202428310" class="form-control" required>
+  <div class="inputcontainer">
+	  <input id="202428310" type="text" name="entry.202428310" placeholder="Email" class="form-control" required>
   </div>
 <!-- Field type: "paragraph" id: "1846923513" -->
-  <div class="container">
-	  <p>Additional Information</p>
-	  <textarea id="839337160" name="entry.839337160" class="form-control" ></textarea>
+  <div class="inputcontainer">
+	  <textarea id="839337160" name="entry.839337160" placeholder="Additional Information" class="form-control-large" ></textarea>
   </div>
 <input type="hidden" name="fvv" value="1">
 <input type="hidden" name="fbzx" value="6027121721712975044">
