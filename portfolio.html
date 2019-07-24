@@ -55,7 +55,6 @@
 			box-shadow: 0 5px 15px navy;
 		}
 		.btnLink{
-			background: navy;
 			font-weight: 200;
 			color: white;
 			border: none;
@@ -66,7 +65,7 @@
 			font-size: 16px;
 			position: relative;
 			margin: auto;
-           		width: 200;
+           	width: 200;
 			height: 35;
 			box-shadow: 0 5px 15px navy;
 		}
@@ -75,6 +74,22 @@
 			box-shadow: 0 5px 15px white;
 			color: black;
 			text-shadow: 0 0 5px #000000;
+		}
+		.btnError{
+			background: darkred;
+			font-weight: 200;
+			color: #ff0000;
+			border: none;
+			text-align: center;
+			text-decoration: none;
+			text-shadow: 0 0 5px #000000;
+			display: inline-block;
+			font-size: 16px;
+			position: relative;
+			margin: 0 auto;
+        	width: 200;
+			height: 35;
+			box-shadow: 0 5px 15px darkred;
 		}
 		#center{
 			margin: 0px auto;
@@ -103,6 +118,9 @@
 			position: center;
 			line-height: 150px;
         }
+		.header, h3{
+			font-size: 25px;
+		}
 		img{
     	max-width: 100%;
     	max-height: 100%;
@@ -116,9 +134,8 @@
 		position: relative;
 		text-align: left;
 		width: 1000px;
-		height: 250px;
+		height: 200px;
     	padding: 25px;
-		word-wrap: break-word;
 		}
 		.ElementRight{
 		border: 5px solid #000000;
@@ -126,9 +143,8 @@
 		position: relative;
 		text-align: right;
 		width: 1000px;
-		height: 250px;
+		height: 200px;
     	padding: 25px;
-		word-wrap: break-word;
 		}
 	</style>
 	
@@ -143,7 +159,7 @@
 		
 
         <div class="nav">	<!-- This Changes -->
-			<a href="index.html"	onmouseover="Hover.play()" onmousedown="Select.play()"><button class="btn">Home</button></a>
+			<a href="index.html" onmouseover="Hover.play()" onmousedown="Select.play()"><button class="btn">Home</button></a>
 			<a href="#" onmouseover="Hover.play()" onmousedown="Select.play()"><button class="btn">Portfolio</button></a>
 			<a href="contact.html" onmouseover="Hover.play()" onmousedown="Select.play()"><button class="btn">Contact</button></a>
 			<a href="projects.html" onmouseover="Hover.play()" onmousedown="Select.play()"><button class="btn">Projects</button></a>
@@ -154,17 +170,18 @@
         <div class="container">
 		</div>
 
-		<div class="ElementLeft" style="background: #352922;color: #dbcfc8"><!-- Change Class and Style -->
-		<img src="./images/Library.jpg" style="float: left;" hspace="10" width="200px" height="200px" alt:"Image retrieved from unsplash.com">
+		<div class="ElementLeft" style="background: #352922;color: #dbcfc8;background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80');background-repeat: no-repeat;background-size: cover"><!-- Change Class and Style -->
+		<img src="./images/Library.jpg" style="float: left;" hspace="10" width="200px" height="200px" title="Image retrieved from unsplash.com">
 		<h3>Author</h3>
-		<p>I've always enjoyed reading books ever since I was a kid and I've always wanted to write my own book. I've started writing as a hobby and I hope to get my first book published by 2020.</p>	
-		<a href="https://youtu.be/dQw4w9WgXcQ"><button class="btnLink" display:"flex" align-items:"center">View Works</button></a>
+		<p style="text-shadow: 0 0 5px #000000;">I've always enjoyed reading books ever since I was a kid, so I figured I should start writing one for a change. After middle school, I started writing as a hobby and decided to publish my work.</p>
+		<a href="https://youtu.be/dQw4w9WgXcQ"><button class="btnError">Currently Unavailable</button></a>
 		</div>
 	
 		<div class="ElementRight" style="background: #204619;color: #326e27"><!-- Change Class and Style -->
 		<img src="https://media.giphy.com/media/4YW25Tiabs4us/giphy.gif" style="float: right;" hspace="10" width="200px" height="200px" alt:"Yeah that's Emily Blunt">
 		<h3>Some girl</h3>
 		<p>Blah blah is an individual that I have known since my time within Blah industries.</p>
+		<a href="https://youtu.be/dQw4w9WgXcQ"><button class="btnError">Currently Unavailable</button></a>
 		</div>
 
 	</body>
