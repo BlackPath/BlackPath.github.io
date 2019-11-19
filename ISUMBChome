@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><img src="https://styleguide.umbc.edu/files/2019/01/UMBC-primary-logo-RGB-1024x236.png" style="width:200px;height:50px;"></li>
+<li>myUMBC</li>
+<li>Events</li>
+<li>Directory</li>
+<li>[ Search ]</li>
+</ul>
+
+<ul>
+  <button><li>Home</li></button>
+  <button><li>About</li></button>
+  <button><li><a href="contact.asp">Undergraduate</a></li></button>
+  <button><li>Graduate Programs</li></button>
+  <button><li>People</li></button>
+  <button><li>Research</li></button>
+</ul>
+
+
+<ul>
+<li><img src="https://i.ytimg.com/vi/iMJo4nJFcpQ/maxresdefault.jpg" style="width:200px;height:100px;"></li>
+<li><b>Gallery Title</b> <p>test</p></li>
+</ul>
+
+<li></li>
+<li></li>
+<li></li>
+
+
+
+
+</body>
+</html>
