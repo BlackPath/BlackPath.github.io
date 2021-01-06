@@ -36,6 +36,10 @@
 			background-color:#0d183d;
 			color:#ffffff;
 		}
+        a{
+            outline: none;
+            text-decoration: none !important;
+        }
 		.btn{
 			background: white;
 			font-weight: 200;
@@ -101,9 +105,12 @@
 		font-family: Trebuchet MS;
 		box-shadow: 0 5px 15px navy;
 		}
-		.item1 {
+		.item{
  		grid-row-start: 1;
 		}
+        .incomplete{
+            background-color: red;
+        }
 		.header h1{
 			font-size: 80px;
 			font-family: 'Trebuchet MS';
@@ -161,13 +168,17 @@
 		<br>
 
 		<div class="grid-container">
-				<button class="item1" onmouseover="GridButton.play()">DS</button>
+				<button class="item1 incomplete" onmouseover="GridButton.play()">DS</button>
 				<button class="item2" onmouseover="GridButton.play()">E Society</button>  
 				<button class="item3" onmouseover="GridButton.play()">UNTN Website</button>
-				<button class="item4" onmouseover="GridButton.play()">CotS Website</button>
+				<button class="item4" type="button" onmouseover="GridButton.play()">CotS Website</button>
 				<button class="item5" onmouseover="GridButton.play()">TRWR</button>
-				<a href="Projects/StratRoulette"><button class="item6" onmouseover="GridButton.play()">Strat Roulette</button></a>
-				<a href="#" onmouseover="Hover.play()" onmousedown="Select.play()" onmouseleave="Hover.currentTime=0"><button class="item7">Projects</button></a>
+                <button class="item6" onmouseover="GridButton.play()"><a href="Projects/StratRoulette">Strat Roulette</a></button>
+
+				<a href="#" onmousedown="Select.play()" onmouseleave="Hover.currentTime=0"><button class="item7">Projects</button></a>
+				
+				<a href="Projects/StratRoulette" class="item8"><button>Test</button></a>
+				
 			  </div>
 
 
