@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 	<head>
  		<title>Portfolio</title>	<!-- This changes -->
@@ -8,26 +8,13 @@
       	type="image/png" 
       	href="./images/Josh.png" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124682166-1"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
- 		gtag('config', 'UA-124682166-1');
-		</script>
-		
-		<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+			var Hover = new Audio()
+			Hover.src = './sounds/Hover.mp3'
+			var Select = new Audio()
+			Select.src = './sounds/Select.mp3'
 		</script>
 	</head>
-
-	<script>
-	var Hover = new Audio()
-	Hover.src = './sounds/Hover.mp3'
-	var Select = new Audio()
-	Select.src = './sounds/Select.mp3'
-	</script>
 
 	<style>
 		body{
@@ -62,7 +49,7 @@
 			border: none;
 			text-align: center;
 			text-decoration: none;
-			text-shadow: 0 0 5px #ffffff;
+			text-shadow: 0 0 5px white;
 			display: inline-block;
 			font-size: 16px;
 			position: relative;
@@ -72,22 +59,30 @@
 			box-shadow: 0 5px 15px navy;
 			cursor:pointer;
 		}
+		.btnLink:hover{
+			background: #0000c8;
+			box-shadow: 0 5px 15px #0000c8;
+		}
 		.btnError{
-			background: darkred;
+			background: #660000;
 			font-weight: 200;
-			color: #ff0000;
+			color: red;
 			border: none;
 			text-align: center;
 			text-decoration: none;
-			text-shadow: 0 0 5px #000000;
+			text-shadow: 0 0 5px black;
 			display: inline-block;
 			font-size: 16px;
 			position: relative;
 			margin: 0 auto;			
         		width: 200;
 			height: 35;
-			box-shadow: 0 5px 15px darkred;
+			box-shadow: 0 5px 15px #660000;
 			cursor:pointer;
+		}
+		.btnError:hover{
+			background: darkred;
+			box-shadow: 0 5px 15px darkred;
 		}
 		#center{
 			margin: 0px auto;
@@ -168,11 +163,11 @@
         <div class="container">
 		</div>
 
-		<div class="ElementLeft" style="background: #352922;color: #dbcfc8;background-image: url('./images/AuthorBanner.png');background-repeat: no-repeat;background-size: cover;text-shadow: 0 0 5px #000000"><!-- Change Class and Style -->
-		<img src="./images/Author.jpg" style="float: left;" hspace="10" width="200px" height="200px" title="Image retrieved from unsplash.com">
-		<h3>Writing</h3>
-		<p style="text-shadow: 0 0 5px #000000;">I've always enjoyed reading books ever since I was a kid, so I figured I should start writing one for a change. After middle school, I started writing as a hobby and eventually decided to release my first book by the end of 2019.</p>
-		<a href="https://youtu.be/dQw4w9WgXcQ"><button class="btnError">Currently Unavailable</button></a>
+		<div class="ElementLeft" style="background: #352922;color: #dbcfc8;background-image: url('./images/Code.png');background-repeat: no-repeat;background-size: cover;text-shadow: 0 0 5px #000000"><!-- Change Class and Style -->
+		<img src="./images/Brackets.png" style="float: left;" hspace="10" width="200px" height="200px" title="Github Mark">
+		<h3>Programming</h3>
+		<p style="text-shadow: 0 0 5px #000000;">Although I wasn't enthusiastic about it at first, I really enjoy coding. I love writing functional scripts and analyzing large datasets. I'm also a big fan of video games and decided to start working on a small project with a few friends. My goal is to publish a finished game to Steam in the near future.</p>
+		<a href="https://youtu.be/dQw4w9WgXcQ" onmouseover="hover.play()"><button class="btnLink">View my Github</button></a>
 		</div>
 
 		<div class="ElementRight" style="background: #204619;color: #d1dece;background-image: url('./images/PhotographyBanner.png');background-repeat: no-repeat;background-size: cover;text-shadow: 0 0 5px #000000"><!-- Change Class and Style -->
@@ -180,6 +175,13 @@
 		<h3>Photography</h3>
 		<p>When I got my first smartphone, I fell in love with the camera features and filters. At some point I received a Nikon D7200, which takes pretty high quality pictures and I've never stopped taking pictures since. I'm hoping to delve further into photography in order to create professional portraits for my friends and family.</p>
 		<a href="https://unsplash.com/@jawshy"><button class="btnLink">View my Photos</button></a>
+		</div>
+		
+		<div class="ElementLeft" style="background: #352922;color: #dbcfc8;background-image: url('./images/AuthorBanner.png');background-repeat: no-repeat;background-size: cover;text-shadow: 0 0 5px #000000"><!-- Change Class and Style -->
+		<img src="./images/Author.jpg" style="float: left;" hspace="10" width="200px" height="200px" title="Image retrieved from unsplash.com">
+		<h3>Writing</h3>
+		<p style="text-shadow: 0 0 5px #000000;">aaaaaaaaaaaaaaaaaaaaaaa</p>
+		<a href="https://youtu.be/dQw4w9WgXcQ"><button class="btnError">Currently Unavailable</button></a>
 		</div>
 
 	</body>
